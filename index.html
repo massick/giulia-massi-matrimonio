@@ -59,47 +59,13 @@
 
         /* SECTION 1 - Hero */
         .section-1 {
-            background-color: #8ED5FF; /* Light blue background */
-            justify-content: space-between;
-            padding: 100px 20px;
+            background-color: #9BDBFF; /* Light blue background */
         }
 
-        .section-1 > * {
-            position: relative;
-            z-index: 2;
-        }
-
-        .section-1 h1,
-        .section-1 .names,
-        .section-1 .date {
-            font-family: 'TAN Headline', serif;
-            color: #C41217; /* Strong red for big text */
-        }
-
-        .section-1 h1 {
-            font-size: 60px;
-            letter-spacing: 2px;
-        }
-
-        .section-1 .middle-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .section-1 .subtitle {
-            font-family: 'High Cruiser', cursive;
-            font-size: 26px;
-            color: #B02024; /* Darker red for smaller text */
-        }
-
-        .section-1 .names {
-            font-size: 40px;
-        }
-
-        .section-1 .date {
-            font-size: 24px;
+        .section-1 img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
         }
 
         /* SECTION 2 - Location & Program */
@@ -289,16 +255,14 @@
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            .section-1 h1 {
-                font-size: 32px;
-            }
-
-            .section-1 .names {
-                font-size: 26px;
-            }
-
             .map-container {
                 height: 250px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .section-1 img {
+                max-width: 500px;
             }
         }
     </style>
@@ -306,12 +270,7 @@
 <body>
     <!-- SECTION 1 - Hero -->
     <section class="section section-1">
-        <h1>ONE NIGHT ONLY</h1>
-        <div class="middle-group">
-            <div class="subtitle">wedding party</div>
-            <div class="names">Giulia&Massimiliano</div>
-        </div>
-        <div class="date">28.03.2026</div>
+        <img src="assets/background-text.png" alt="Giulia & Massimiliano">
     </section>
 
     <!-- SECTION 2 - Location & Program -->
