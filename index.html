@@ -59,17 +59,9 @@
 
         /* SECTION 1 - Hero */
         .section-1 {
-            background-color: red; /* Fallback color */
+            background-color: #8ED5FF; /* Light blue background */
             justify-content: space-between;
             padding: 100px 20px;
-        }
-
-        .section-1::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 1;
         }
 
         .section-1 > * {
@@ -81,7 +73,7 @@
         .section-1 .names,
         .section-1 .date {
             font-family: 'TAN Headline', serif;
-            color: white;
+            color: #C41217; /* Strong red for big text */
         }
 
         .section-1 h1 {
@@ -99,7 +91,7 @@
         .section-1 .subtitle {
             font-family: 'High Cruiser', cursive;
             font-size: 26px;
-            color: white;
+            color: #B02024; /* Darker red for smaller text */
         }
 
         .section-1 .names {
@@ -112,14 +104,26 @@
 
         /* SECTION 2 - Location & Program */
         .section-2 {
-            background: var(--color-bg-light);
+            background: #FFF4E6; /* Warm cream background */
+        }
+
+        .section-2-alt {
+            background: #FFE4CC; /* Light orange background for variety */
         }
 
         .section-2 h2,
+        .section-2-alt h2 {
+            font-family: 'TAN Headline', serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #C41217; /* Strong red for headings */
+        }
+
         .section-3 h2 {
             font-family: 'TAN Headline', serif;
             font-size: 28px;
             margin-bottom: 20px;
+            color: #C41217; /* Strong red for heading */
         }
 
         .section-3 h2 {
@@ -135,10 +139,17 @@
             font-family: 'High Cruiser', cursive;
             font-size: 14px;
             margin: 8px 0;
+            color: #B02024; /* Darker red for location text */
         }
 
         .location-city {
             font-family: 'Open Sans', sans-serif !important;
+        }
+        .location p.location-time {
+            font-family: 'TAN Headline', serif;
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 20px;
         }
 
         .map-container {
@@ -172,11 +183,12 @@
             font-weight: 600;
             margin-right: 20px;
             min-width: 100px;
+            color: #C41217; /* Strong red for schedule times */
         }
 
         /* SECTION 3 - Contacts */
         .section-3 {
-            background: var(--color-bg-medium);
+            background: #FFEEF0; /* Light rose background to complement the color scheme */
             padding: 30px 20px;
         }
 
@@ -204,7 +216,7 @@
             display: flex;
             gap: 10px;
             max-width: 450px;
-            margin: 0 auto 80px;
+            margin: 0 auto 60px;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -307,41 +319,34 @@
         <h2>Dove</h2>
         
         <div class="location">
-            <p class="location-name">SALONE DELLE ESPOSIZIONI</p>
-            <p>ROCCA MALATESTIANA</p>
-            <p class="location-city">Piazzale Sigismondo Pandolfo Malatesta - Fano</p>
+            <p class="location-name">SALA DELLA CONCORDIA</p>
+            <p>COMUNE DI FANO</p>
+            <p class="location-city">Via San Francesco d'Assisi, 76 - Fano</p>
+            <p class="location-time">ORE 11:00</p>
         </div>
 
         <div class="map-container">
-            <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1441.9718634297946!2d13.013315076520636!3d43.84711085396834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f17!3m2!1m1!2zNDPCsDUwJzQ5LjYiTiAxM8KwMDAnNTUuNiJF!5e0!3m2!1sit!2sit!4v1736612200000!5m2!1sit!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Via+San+Francesco+d'Assisi+76+Fano+Italy&zoom=17" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <h2>Programma</h2>
-        <div class="schedule">
-            <div class="schedule-item">
-                <span class="schedule-time">20:00</span>
-                <span class="schedule-event">Drink di benvenuto</span>
-            </div>
-            <div class="schedule-item">
-                <span class="schedule-time">20:30</span>
-                <span class="schedule-event">Cerimonia</span>
-            </div>
-            <div class="schedule-item">
-                <span class="schedule-time">21:00</span>
-                <span class="schedule-event">Buffet</span>
-            </div>
-            <div class="schedule-item">
-                <span class="schedule-time">23:00</span>
-                <span class="schedule-event">Si aprono le danze</span>
-            </div>
-            <div class="schedule-item">
-                <span class="schedule-time">più tardi</span>
-                <span class="schedule-event">Facciamo come Baglioni</span>
-            </div>
-        </div>
     </section>
 
-    <!-- SECTION 3 - Contacts -->
+    <!-- SECTION 3 - Pranzo -->
+    <section class="section section-2-alt">
+        <h2>Pranzo</h2>
+        
+        <div class="location">
+            <p class="location-name">CILE'S RISTORANTE BISTROT</p>
+            <p class="location-city">Viale Dante Alighieri, 89 - Fano</p>
+        </div>
+
+        <div class="map-container">
+            <iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Cile's+Ristorante+Bistrot+Fano+Italy&zoom=17" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <!-- SECTION 4 - Contacts -->
     <section class="section section-3">
         <h2>Contatti</h2>
 
@@ -366,8 +371,8 @@
         </div>
 
         <div class="gift">
-            <div class="gift-text">L'unico regalo che vogliamo è vedervi ballare con noi!</div>
-            <div class="gift-text">Ma se proprio insistete...</div>
+            <div class="gift-text">La vostra presenza sarà per noi il dono più bello.</div>
+            <div class="gift-text">Se desiderate comunque contribuire, il vostro pensiero sarà devoluto in beneficenza.</div>
             <div class="gift-details">
                 <div class="gift-detail-item"><span class="gift-detail-label">Beneficiario:</span> <span class="gift-detail-value">M Zoffoli & G Pietraccini</span></div>
                 <div class="gift-detail-item"><span class="gift-detail-label">IBAN:</span> <span class="gift-detail-value">IT34 U036 6901 6008 9012 6710 799</span></div>
